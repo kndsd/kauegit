@@ -15,21 +15,17 @@ from dataclasses import dataclass
 class pessoa:
     nome:str
     email:str
-    telefone:str
     endereso:str
-    def amostra(self):
-        print(f" seu nome:{self.nome}\n e-meil:{self.email}\ntelefone:{self.telefone}\nendereso:{self.endereso}")
-
-
-
-
+    def dados_entrega(self):
+        print(f"nome:{self.nome}")
+        print(f"endereso:{self.endereso}")
+    def maeket(self):
+        print(f"nome:{self.nome}")
+        print(f"nome:{self.email}")
+        
 pessoa1=pessoa( nome=input("digite seu nome:"),
                 email=str(input("digite seu e-mail:")),
-                telefone=str(input("digite seu telefone:")),
                 endereso=str(input("digite seu endereso")))
-
-
-
-
-pessoa1.amostra()
-
+               
+pessoa1.dados_entrega()
+pessoa1.maeket()
